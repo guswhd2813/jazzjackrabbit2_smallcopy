@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0B2758DE-3A1C-464F-89E3-6FD0A3E28262}</ProjectGuid>
+    <RootNamespace>Jazzjackrabbit</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.29904.37</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Back.cpp" />
+    <ClCompile Include="Back2.cpp" />
+    <ClCompile Include="BitBmp.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Bullet_Effect1.cpp" />
+    <ClCompile Include="Bullet_Effect2.cpp" />
+    <ClCompile Include="CollisionMgr.cpp" />
+    <ClCompile Include="Device.cpp" />
+    <ClCompile Include="Devil.cpp" />
+    <ClCompile Include="Effect.cpp" />
+    <ClCompile Include="Guied.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Jazz jack rabbit.cpp" />
+    <ClCompile Include="KeyMgr.cpp" />
+    <ClCompile Include="Lizard.cpp" />
+    <ClCompile Include="Logo.cpp" />
+    <ClCompile Include="MainGame.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="Multi.cpp" />
+    <ClCompile Include="MyButton.cpp" />
+    <ClCompile Include="MyEdit.cpp" />
+    <ClCompile Include="MyMenu.cpp" />
+    <ClCompile Include="Nomal.cpp" />
+    <ClCompile Include="Obj.cpp" />
+    <ClCompile Include="ObjMgr.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="RenderMgr.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneMgr.cpp" />
+    <ClCompile Include="Score.cpp" />
+    <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="Stage2.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TangTang.cpp" />
+    <ClCompile Include="Turtle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Back.h" />
+    <ClInclude Include="Back2.h" />
+    <ClInclude Include="BitBmp.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Bullet_Effect1.h" />
+    <ClInclude Include="Bullet_Effect2.h" />
+    <ClInclude Include="CollisionMgr.h" />
+    <ClInclude Include="define.h" />
+    <ClInclude Include="Device.h" />
+    <ClInclude Include="Devil.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="enum.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="function.h" />
+    <ClInclude Include="Guied.h" />
+    <ClInclude Include="Include.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Jazz jack rabbit.h" />
+    <ClInclude Include="KeyMgr.h" />
+    <ClInclude Include="Lizard.h" />
+    <ClInclude Include="Logo.h" />
+    <ClInclude Include="MainGame.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="Multi.h" />
+    <ClInclude Include="MyButton.h" />
+    <ClInclude Include="MyEdit.h" />
+    <ClInclude Include="MyMenu.h" />
+    <ClInclude Include="Nomal.h" />
+    <ClInclude Include="Obj.h" />
+    <ClInclude Include="ObjMgr.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="RenderMgr.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneMgr.h" />
+    <ClInclude Include="Score.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="Stage2.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="struct.h" />
+    <ClInclude Include="TangTang.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Turtle.h" />
+    <ClInclude Include="value.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Jazz jack rabbit.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Jazz jack rabbit.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Jazz jack rabbit", "Jazz jack rabbit\Jazz jack rabbit.vcproj", "{0B2758DE-3A1C-464F-89E3-6FD0A3E28262}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B2758DE-3A1C-464F-89E3-6FD0A3E28262}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0B2758DE-3A1C-464F-89E3-6FD0A3E28262}.Debug|Win32.Build.0 = Debug|Win32
+		{0B2758DE-3A1C-464F-89E3-6FD0A3E28262}.Release|Win32.ActiveCfg = Release|Win32
+		{0B2758DE-3A1C-464F-89E3-6FD0A3E28262}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+#pragma once
+
+enum OBJID
+{
+	OBJ_PLAYER,
+	OBJ_MONSTER,
+	OBJ_BULLET,
+	OBJ_EFFECT,
+	OBJ_EFFECT2,
+	OBJ_ITEM,
+	OBJ_SCORE,
+	OBJ_END
+};
+
+enum SCENEID
+{
+	SC_LOGO,
+	SC_MENU,
+	SC_EDIT,
+	SC_STAGE,
+	SC_STAGE2,
+	SC_END
+};
+
+enum DIRECTION
+{
+	DIR_LU,
+	
+	DIR_RU,
+	
+	DIR_UP,
+	
+	DIR_END
+};
